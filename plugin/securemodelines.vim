@@ -41,7 +41,7 @@ endif
 if (! exists("g:secure_modelines_leave_modeline"))
     if &modeline
         set nomodeline
-        if g:secure_modelines_verbose
+        if g:secure_modelines_verbose > 1
             echohl WarningMsg
             echo "Forcibly disabling internal modelines for securemodelines.vim"
             echohl None
